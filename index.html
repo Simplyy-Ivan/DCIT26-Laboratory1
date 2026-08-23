@@ -1,74 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ivan Aga Dayrit</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header class="terminal">
-    <div class="terminal-bar">
-      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-      <span class="terminal-title">ivan@cvsu:~</span>
-    </div>
-    <div class="terminal-body">
-      <p><span class="prompt">$</span> whoami</p>
-      <h1 class="typed">Ivan Aga Dayrit</h1>
-      <p><span class="prompt">$</span> cat role.txt</p>
-      <p class="role">BSIT student — Cavite State University, Indang Campus</p>
-      <p><span class="prompt">$</span> git status</p>
-      <p class="status">On branch <span class="accent">main</span> — building things, one commit at a time.</p>
-      <span class="cursor">▌</span>
-    </div>
-  </header>
-
-  <main>
-
-    <section id="about" class="section">
-      <p class="eyebrow">01 — about</p>
-      <h2>Not just answering "who am I," but showing my work.</h2>
-      <p class="body-text">
-        I'm an incoming third-year Information Technology student based in General Trias, Cavite.
-        I like building things I can actually point to — small websites, group projects, and now,
-        my first properly version-controlled repository. This page itself is Laboratory Exercise 1:
-        my first init, my first commit, my first push.
-      </p>
-    </section>
-
-    <section id="skills" class="section">
-      <p class="eyebrow">02 — currently learning</p>
-      <div class="skill-grid">
-        <div class="skill-card">
-          <p class="skill-tag">tools</p>
-          <p>Git &amp; GitHub, VS Code</p>
-        </div>
-        <div class="skill-card">
-          <p class="skill-tag">languages</p>
-          <p>HTML, CSS, working on more</p>
-        </div>
-        <div class="skill-card">
-          <p class="skill-tag">coursework</p>
-          <p>Data Structures &amp; Algorithms, System Integration &amp; Middleware</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Aga Dayrit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span
+        ><span class="dot green"></span>
+        <span class="terminal-title">ivan@cvsu:~</span>
       </div>
-    </section>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <h1 class="typed">Ivan Aga Dayrit</h1>
+        <p><span class="prompt">$</span> cat role.txt</p>
+        <p class="role">
+          BSIT student — Cavite State University, Indang Campus
+        </p>
+        <p><span class="prompt">$</span> git status</p>
+        <p class="status">
+          On branch <span class="accent">main</span> — building things, one
+          commit at a time.
+        </p>
+        <span class="cursor">▌</span>
+      </div>
+    </header>
 
-    <section id="log" class="section">
-      <p class="eyebrow">03 — commit log</p>
-      <ul class="log-list">
-        <li><span class="hash">a1e9c3f</span> Initial Commit — first version of this page pushed to <span class="accent">main</span></li>
-      </ul>
-    </section>
+    <main>
+      <section id="about" class="section">
+        <p class="eyebrow">01 — about</p>
+        <h2>Not just answering "who am I," but showing my work.</h2>
+        <p class="body-text">
+          I'm an incoming third-year Information Technology student based in
+          General Trias, Cavite. I like building things I can actually point to
+          — small websites, group projects, and now, my first properly
+          version-controlled repository. This page itself is Laboratory Exercise
+          1: my first init, my first commit, my first push.
+        </p>
+      </section>
 
-  </main>
+      <section id="skills" class="section">
+        <p class="eyebrow">02 — currently learning</p>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <p class="skill-tag">tools</p>
+            <p>Git &amp; GitHub, VS Code</p>
+          </div>
+          <div class="skill-card">
+            <p class="skill-tag">languages</p>
+            <p>HTML, CSS, working on more</p>
+          </div>
+          <div class="skill-card">
+            <p class="skill-tag">coursework</p>
+            <p>
+              Data Structures &amp; Algorithms, System Integration &amp;
+              Middleware
+            </p>
+          </div>
+        </div>
 
-  <footer>
-    <p><span class="prompt">$</span> echo "thanks for stopping by"</p>
-  </footer>
+      <section id="projects" class="section">
+  <p class="eyebrow">02b — projects</p>
+  <div class="skill-grid">
+    <div class="skill-card">
+      <p class="skill-tag">school</p>
+      <p>CTRL + CART — group ERP system for a computer parts store</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-tag">this lab</p>
+      <p>This very page — my first Git-tracked website</p>
+    </div>
+  </div>
+</section>
 
-</body>
+
+      <section id="log" class="section">
+        <p class="eyebrow">03 — commit log</p>
+        <ul class="log-list">
+          <li>
+            <span class="hash">a1e9c3f</span> Initial Commit — first version of
+            this page pushed to <span class="accent">main</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p><span class="prompt">$</span> echo "thanks for stopping by"</p>
+    </footer>
+  </body>
 </html>
