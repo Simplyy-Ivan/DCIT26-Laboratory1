@@ -1,0 +1,173 @@
+:root {
+  --bg: #14171a;
+  --panel: #1c2024;
+  --border: #2a2e33;
+  --text: #ededed;
+  --muted: #9aa3ab;
+  --accent: #5fd068;
+  --accent-dim: #3b8a43;
+  --amber: #e8a33d;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+/* ---- terminal hero ---- */
+.terminal {
+  max-width: 720px;
+  margin: 48px auto 0;
+  padding: 0 20px;
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 14px;
+}
+
+.dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-title {
+  margin-left: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.terminal-body {
+  background: #101316;
+  border: 1px solid var(--border);
+  border-radius: 0 0 10px 10px;
+  padding: 28px 24px 36px;
+  font-family: var(--mono);
+}
+
+.prompt { color: var(--accent); margin-right: 6px; }
+
+.typed {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  margin: 4px 0 18px;
+  letter-spacing: -0.02em;
+  border-right: 3px solid var(--accent);
+  display: inline-block;
+  padding-right: 6px;
+  animation: blink 1s step-end infinite;
+}
+
+.role { color: var(--text); margin: 4px 0 18px; }
+.status { color: var(--muted); margin: 4px 0 0; }
+.accent { color: var(--accent); font-weight: 700; }
+
+.cursor {
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; opacity: 0.4; }
+}
+
+/* ---- content sections ---- */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 20px 20px;
+}
+
+.section {
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin: 0 0 16px;
+  max-width: 34ch;
+}
+
+.body-text {
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.skill-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.skill-tag {
+  font-family: var(--mono);
+  color: var(--amber);
+  font-size: 12px;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.skill-card p:last-child { margin: 0; }
+
+.log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.log-list li {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 6px;
+}
+
+.hash { color: var(--amber); margin-right: 8px; }
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .terminal { margin-top: 24px; }
+  .terminal-body { padding: 20px 16px 28px; }
+}
